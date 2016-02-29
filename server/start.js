@@ -12,7 +12,8 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 //Static directories/files
-app.use(express.static(__dirname + "/node_modules/"));
+app.use(express.static(ROOT + "/node_modules/"));
+app.use('/public/', express.static(ROOT + "/browser/public/"));
 
 app.use('/', router);
 // app.use('/api/', APIrouter);
