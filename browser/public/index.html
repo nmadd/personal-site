@@ -1,12 +1,30 @@
 <head>
+  	<link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="/public/style.css" rel="stylesheet">
+  	<link href='https://fonts.googleapis.com/css?family=Lato|PT+Serif+Caption' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="/angular/angular.min.js"></script>
 	<script type="text/javascript" src="/public/main.js"></script>
 </head>
 
 <body ng-app="Craylist">
-	<p>Hello from index</p>
-	<div ng-controller="HomeController">
-
+	<div class="container-fluid" ng-controller="HomeController">
+		<div class="row" id="name">
+			<div class="col-md-8 col-lg-8 col-md-offset-2">
+				<h1>NATE MADDREY</h1>
+				<ul id="social-profile-links" class="list-inline">
+					<li ng-repeat="profile in socialProfiles"><a href="{{profile.href}}" target="_blank"><span ><img class="social-profile-icon pull-left" src="{{profile.icon}}" alt=""></span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" id="projects">
+			<div class="col-md-8 col-md-offset-2">
+				<ul ng-repeat="project in portfolio">
+					<h3 id="portfolio-link-{{$index}}" class="portfolio-link"><a href="{{project.href}}"  target="_blank">{{project.name}}</a></h3>
+					<p>{{project.description}}</p>
+				</ul>
+			</div>
+		</div>
+		
 	</div>
 
 </body>

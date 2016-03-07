@@ -1,0 +1,89 @@
+$primary-color: blue;
+$font-family: 'Lato',
+sans-serif;
+body {
+    h1 {
+        letter-spacing: 4px;
+    }
+    color: black;
+    font-family: $font-family;
+    background: linear-gradient(55deg, #112fff, #11c2ff, #f0ffff);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    @-webkit-keyframes AnimationName {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    @-moz-keyframes AnimationName {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    @keyframes AnimationName {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    /*	text-align: center;*/
+    a {
+        text-decoration: none;
+    }
+    #name {
+        padding-top: 2em;
+        padding-bottom: 1em;
+        color: black;
+    }
+    #social-profile-links {
+     /*   list-style: none;
+        li {
+            display: inline;
+        }*/
+        li {
+            padding: .5em 1em 0;
+        }
+        .social-profile-icon {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    #projects {
+        padding-bottom: 5em;
+        ul {
+            list-style-type: none;
+        }
+        .portfolio-link {
+            padding: 10px 0;
+            font-size: 2em;
+            a {
+            	text-decoration: none;
+            	color: black;
+            	&:hover {
+            		color: white;
+            	};
+            	 
+            }
+
+        }
+    }
+}
