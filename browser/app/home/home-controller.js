@@ -2,7 +2,7 @@ app.controller('HomeController', function($scope){
 	$scope.portfolio = [
 	{name: 'Jamurai', href: 'http://www.jamurai.io/', description: "A real-time, collaborative playlist app for crowdsourcing music selection at parties."},
 	{name: '90sBay', href: 'http://so90sbay.herokuapp.com/', description: "An Amazon clone that only sells the dopest 90s nostalgia."},
-	{name: 'EverKindle', href: 'blank', description: "A web scraper that transforms your Kindle highlights into Evernotes."},
+	{name: 'EverKindle', href: 'https://github.com/nmadd/ever-kindle', description: "A web scraper that transforms your Kindle highlights into Evernotes."},
 	{name: 'FratMusic', href: 'http://www.fratmusic.com/', description: "A playlist based streaming music app for college students."},
 	{name: 'No Color No Sound', href: 'http://nocolornosound.com/', description: "A curated selection of high quality new music."}
 	];
