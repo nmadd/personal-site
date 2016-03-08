@@ -1,23 +1,23 @@
 {
-  "name": "craylist",
+  "name": "natemaddrey",
   "version": "1.0.0",
-  "description": "The craziest playlist app ever",
-  "main": "index.js",
+  "description": "Personal site",
+  "main": "server/start.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./server/start.js",
+    "start": "nodemon server/start.js",
     "postinstall": "gulp default"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nmadd/craylist.git"
+    "url": "git+https://github.com/nmadd/personal-site.git"
   },
   "author": "Nate Maddrey",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nmadd/craylist/issues"
+    "url": "https://github.com/nmadd/personal-site.git/issues"
   },
-  "homepage": "https://github.com/nmadd/craylist#readme",
+  "homepage": "https://github.com/nmadd/personal-site.git#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
     "bootstrap": "^3.3.6",
