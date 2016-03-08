@@ -142,27 +142,27 @@ gulp.task('default', function() {
 
     gulp.start('build');
 
-    // Run when anything inside of browser/js changes.
-    gulp.watch('./browser/app/**/*.js', function() {
-        runSeq('build', 'reload');
-    });
+    // // Run when anything inside of browser/js changes.
+    // gulp.watch('./browser/app/**/*.js', function() {
+    //     runSeq('build', 'reload');
+    // });
 
-    // Run when anything inside of browser/scss changes.
-    gulp.watch('browser/scss/**', function() {
-        runSeq('buildCSS', 'reloadCSS');
-    });
+    // // Run when anything inside of browser/scss changes.
+    // gulp.watch('browser/scss/**', function() {
+    //     runSeq('buildCSS', 'reloadCSS');
+    // });
 
-    // gulp.watch('server/**/*.js', ['lintJS']);
+    // // gulp.watch('server/**/*.js', ['lintJS']);
 
-    // // Reload when a template (.html) file changes.
-    gulp.watch(['browser/**/*.html', 'server/app/views/*.html'], ['reload']);
+    // // // Reload when a template (.html) file changes.
+    // gulp.watch(['browser/**/*.html', 'server/app/views/*.html'], ['reload']);
 
-    // // Run server tests when a server file or server test file changes.
-    // gulp.watch(['tests/server/**/*.js'], ['testServerJS']);
+    // // // Run server tests when a server file or server test file changes.
+    // // gulp.watch(['tests/server/**/*.js'], ['testServerJS']);
 
-    // // Run browser testing when a browser test file changes.
-    // gulp.watch('tests/browser/**/*', ['testBrowserJS']);
+    // // // Run browser testing when a browser test file changes.
+    // // gulp.watch('tests/browser/**/*', ['testBrowserJS']);
 
-    livereload.listen();
+    // livereload.listen();
 
 });
