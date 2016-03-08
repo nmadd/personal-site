@@ -19,6 +19,6 @@ app.use('/', router);
 // app.use('/api/', APIrouter);
 
 
-app.listen(2727, function() {
+app.listen(process.env.PORT || 2727, function() {
     console.log("Listening on port 2727");
 });
