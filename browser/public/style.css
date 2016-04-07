@@ -1,4 +1,18 @@
 body {
+  /*    @media (min-width: 480px) {
+        h1 {
+            font-size: 8em;
+        }
+    }
+    @media (min-width: 768px) {}
+    @media (min-width: 992px) {
+        h1 {
+            font-size: 4em;
+        }
+    }
+    h1 {
+        letter-spacing: 4px;
+    }*/
   color: black;
   font-family: "Lato", sans-serif;
   background: linear-gradient(270deg, #dff5ff, #8fc3ff, #a4b9ee);
@@ -7,14 +21,6 @@ body {
   -moz-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
   /*  text-align: center;*/ }
-  @media (min-width: 480px) {
-    body h1 {
-      font-size: 8em; } }
-  @media (min-width: 992px) {
-    body h1 {
-      font-size: 4em; } }
-  body h1 {
-    letter-spacing: 4px; }
 
 @-webkit-keyframes AnimationName {
   0% {
@@ -70,8 +76,19 @@ body {
 
 @media (max-device-width: 480px) {
   p {
-    font-size: 3em; }
-  h3 {
-    font-size: 4em; }
+    font-size: 2em;
+    padding: 1em .5em; }
+  h3 a {
+    font-size: 2.5em; }
   h1 {
-    font-size: 6em; } }
+    font-size: 6em;
+    padding: .5em; }
+  body #social-profile-links {
+    margin-left: 4em;
+    padding: 2em 0; }
+    body #social-profile-links .social-profile-icon {
+      height: 50px;
+      width: 50px;
+      margin: 0 4em 0 0; }
+  body #projects {
+    padding-top: 4em; } }

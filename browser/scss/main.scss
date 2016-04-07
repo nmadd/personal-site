@@ -5,7 +5,7 @@ $mobile-name-size: 8em;
 $mobile-title-size: 6em;
 $mobile-description-size: 4em;
 body {
-    @media (min-width: 480px) {
+    /*    @media (min-width: 480px) {
         h1 {
             font-size: 8em;
         }
@@ -18,7 +18,7 @@ body {
     }
     h1 {
         letter-spacing: 4px;
-    }
+    }*/
     color: black;
     font-family: $font-family;
     background: linear-gradient(270deg, #dff5ff, #8fc3ff, #a4b9ee);
@@ -103,12 +103,28 @@ body {
 
 @media (max-device-width: 480px) {
     p {
-        font-size: 2em ;
+        font-size: 2em;
+        padding: 1em .5em;
     }
-    h3 {
-        font-size: 4em;
+    h3 a {
+        font-size: 2.5em;
     }
     h1 {
         font-size: 6em;
+        padding: .5em;
+    }
+    body {
+        #social-profile-links {
+            margin-left: 4em;
+            padding: 2em 0;
+            .social-profile-icon {
+                height: 50px;
+                width: 50px;
+                margin: 0 4em 0 0;
+            }
+        } 
+        #projects {
+            padding-top: 4em;
+        } 
     }
 }
