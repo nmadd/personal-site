@@ -1,13 +1,27 @@
 $primary-color: blue;
 $font-family: 'Lato',
 sans-serif;
+$mobile-name-size: 8em;
+$mobile-title-size: 6em;
+$mobile-description-size: 4em;
 body {
+    @media (min-width: 480px) {
+        h1 {
+            font-size: 8em;
+        }
+    }
+    @media (min-width: 768px) {}
+    @media (min-width: 992px) {
+        h1 {
+            font-size: 4em;
+        }
+    }
     h1 {
         letter-spacing: 4px;
     }
     color: black;
     font-family: $font-family;
-    background: linear-gradient(55deg, #112fff, #11c2ff, #f0ffff);
+    background: linear-gradient(270deg, #dff5ff, #8fc3ff, #a4b9ee);
     background-size: 600% 600%;
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
@@ -45,7 +59,7 @@ body {
             background-position: 0% 50%
         }
     }
-    /*	text-align: center;*/
+    /*  text-align: center;*/
     a {
         text-decoration: none;
     }
@@ -55,7 +69,7 @@ body {
         color: black;
     }
     #social-profile-links {
-     /*   list-style: none;
+        /*   list-style: none;
         li {
             display: inline;
         }*/
@@ -76,14 +90,25 @@ body {
             padding: 10px 0;
             font-size: 2em;
             a {
-            	text-decoration: none;
-            	color: black;
-            	&:hover {
-            		color: white;
-            	};
-            	 
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    color: white;
+                }
+                ;
             }
-
         }
+    }
+}
+
+@media (max-device-width: 480px) {
+    p {
+        font-size: 2em ;
+    }
+    h3 {
+        font-size: 4em;
+    }
+    h1 {
+        font-size: 6em;
     }
 }

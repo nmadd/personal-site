@@ -1,12 +1,18 @@
 body {
   color: black;
   font-family: "Lato", sans-serif;
-  background: linear-gradient(55deg, #112fff, #11c2ff, #f0ffff);
+  background: linear-gradient(270deg, #dff5ff, #8fc3ff, #a4b9ee);
   background-size: 600% 600%;
   -webkit-animation: AnimationName 30s ease infinite;
   -moz-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
-  /*	text-align: center;*/ }
+  /*  text-align: center;*/ }
+  @media (min-width: 480px) {
+    body h1 {
+      font-size: 8em; } }
+  @media (min-width: 992px) {
+    body h1 {
+      font-size: 4em; } }
   body h1 {
     letter-spacing: 4px; }
 
@@ -61,3 +67,11 @@ body {
         color: black; }
         body #projects .portfolio-link a:hover {
           color: white; }
+
+@media (max-device-width: 480px) {
+  p {
+    font-size: 3em; }
+  h3 {
+    font-size: 4em; }
+  h1 {
+    font-size: 6em; } }
